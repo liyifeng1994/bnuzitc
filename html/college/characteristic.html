@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>办学特色 - 信息技术学院</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css" charset="gbk">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<!-- 引入JQuery及UI库 -->
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+	<!-- 设置首页、加入收藏 -->
+	<script type="text/javascript" src="../../js/setHomeSetFav.js" charset="gbk"></script>
+	<!-- 返回顶部 -->
+	<script type="text/javascript" src="../../js/scrolltopcontrol-sub.js"></script>
+</head>
+<body>
+	<div class="topBar">
+		<div class="comWidth">
+			<ul class="fr">
+				<li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+				<li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+				<li><a href="../admin/admin.html" target="_blank">后台管理</a></li>
+				<li><a href="http://itc.bnuz.edu.cn/" target="_blank">旧版入口</a></li>
+			</ul>
+		</div><!-- comWidth结束 -->
+	</div><!-- topBar结束 -->
+	<div class="nav" id="nav">
+		<div class="comWidth clearfix">
+			<div class="logo fl"><a href="../../index.html" target="_blank"><img src="../../images/logo.png" alt="logo"></a></div>
+			<ul class="fl">
+				<li><a href="../../index.html" target="_blank">首&nbsp;&nbsp;页</a></li>
+				<li><a href="../college/college.html" target="_blank">学院概况</a>
+					<ul>
+						<li><a href="../college/college.html" target="_blank">学院简介</a></li>
+						<li><a href="../college/characteristic.html" target="_blank">办学特色</a></li>
+						<li><a href="../college/leader.html" target="_blank">现任领导</a></li>
+						<li><a href="../college/organization.html" target="_blank">组织架构</a></li>
+						<li><a href="../college/teacher.html" target="_blank">师资队伍</a></li>
+						<li><a href="../college/communist.html" target="_blank">教师党建</a></li>
+						<li><a href="../college/union.html" target="_blank">工会之家</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html" target="_blank">学院新闻</a>
+					<ul>
+						<li><a href="../news/rules.html" target="_blank">规章制度</a></li>
+						<li><a href="../news/notice.html" target="_blank">公告通知</a></li>
+						<li><a href="../news/news.html" target="_blank">新闻快讯</a></li>
+						<li><a href="../news/work.html" target="_blank">党建工作</a></li>
+						<li><a href="../news/student.html" target="_blank">学生天地</a></li>
+						<li><a href="../news/teacher.html" target="_blank">教工之家</a></li>
+						<li><a href="../news/job.html" target="_blank">就业信息</a></li>
+						<li><a href="../news/international.html" target="_blank">国际合作</a></li>
+					</ul>
+				</li>
+				<li><a href="../subject/jsj.html" target="_blank">学科专业</a>
+					<ul>
+						<li><a href="../subject/jsj.html" target="_blank">计算机科学与技术</a></li>
+						<li><a href="../subject/rj.html" target="_blank">软件工程</a></li>
+						<li><a href="../subject/dz.html" target="_blank">电子信息科学与技术</a></li>
+						<li><a href="../subject/dq.html" target="_blank">电气工程及其自动化</a></li>
+						<li><a href="../subject/sm.html" target="_blank">数字媒体技术</a></li>
+						<li><a href="../subject/gjb.html" target="_blank">国际研究班</a></li>
+						<li><a href="../subject/yjs.html" target="_blank">研究生</a></li>
+					</ul>
+				</li>
+				<li><a href="../study/direction.html" target="_blank">科学研究</a>
+					<ul>
+						<li><a href="../study/direction.html" target="_blank">研究方向</a></li>
+						<li><a href="../study/it.html" target="_blank">IT研发中心</a></li>
+						<li><a href="http://itc.bnuep.com:8088/gis/" target="_blank">遥感与GIS中心</a></li>
+						<li><a href="../study/electric.html" target="_blank">电气智能控制研发中心</a></li>
+						<li><a href="../study/intelligent.html" target="_blank">智能工程研究所</a></li>
+						<li><a href="http://sri.bnuz.edu.cn/flash/index2.7.4.html" target="_blank">软件研究所</a></li>
+						<li><a href="../study/digital.html" target="_blank">数字媒体技术与应用研究中心</a></li>
+						<li><a href="../study/graph.html" target="_blank">图形图像公共实验室</a></li>
+						<li><a href="../study/network.html" target="_blank">网络安全技术服务平台</a></li>
+						<li><a href="http://itc.bnuep.com/syzx/" target="_blank">计算机教学实验中心</a></li>
+						<li><a href="http://jsjjc.bnuep.com/Default.aspx" target="_blank">计算机基础资源站</a></li>
+						<li><a href="../study/experimentation.html" target="_blank">实验中心</a></li>
+						<li><a href="../study/library.html" target="_blank">资料室</a></li>
+					</ul>
+				</li>
+				<li><a href="#">招生就业</a>
+					<ul>
+						<li><a href="http://zsb.bnuz.edu.cn/" target="_blank">校招生网</a></li>
+						<li><a href="http://job.bnuz.edu.cn/" target="_blank">校就业网</a></li>
+						<li><a href="http://itc.bnuz.edu.cn:8088/" target="_blank">就业指导中心</a></li>
+						<li><a href="http://itc.bnuep.com/jiuye/" target="_blank">就业信息管理系统</a></li>
+					</ul>
+				</li>
+				<li><a href="http://ittc.bnuep.com" target="_blank">培训中心</a></li>
+			</ul>
+			<input class="search fr" type="text" placeholder="请输入要搜索的内容...">
+		</div><!-- comWidth结束 -->
+	</div><!-- nav结束 -->
+	<div class="main comWidth clearfix">
+		<div class="list_left fl">
+			<h3>学院概况</h3>
+			<ul>
+				<li><a href="college.html">学院简介</a></li>
+				<li><a href="characteristic.html">办学特色</a></li>
+				<li><a href="leader.html">现任领导</a></li>
+				<li><a href="organization.html">组织架构</a></li>
+				<li><a href="teacher.html">师资队伍</a></li>
+				<li><a href="communist.html">教师党建</a></li>
+				<li><a href="union.html">工会之家</a></li>
+			</ul>
+			<img src="../../images/xiaoxun.gif" alt="校训">
+		</div><!-- sub-nav结束 -->
+		<div class="list_right fr">
+			<h3>办学特色</h3>
+			<div class="content">
+				<h4>■&nbsp;建设专业完备实验室</h4>
+				<p>应用型人才的特点之一是动手能力强。为了给学生提供更多的实践机会，充分提高动手能力，2002年10月，由信息技术学院负责，组建了计算机教学实验中心，并建立了一套完善的实验教学方法和实验教学管理机制，为培养应用型人才提供强有力的保障。目前，中心已拥有多个配置先进的专业实验室：电子技术实验室、计算机原理实验室、嵌入式系统实验室、网络应用技术实验室、图形图像与数字城市实验室。同时，还建有供学生参加科研实践的研究型实验室，如学生专业项目实验室、软件、电子商务和游戏实验室等。由于工作出色，2007年学院的计算机实验中心被评为“广东省计算机实验教学示范中心”。这些实验室的建设极大地促进了我院实验教学工作的开展，同时也为开展产学研合作奠定了坚实的基础。
+				<h4>■&nbsp;课程设置适应IT行业发展</h4>
+				<p>学院充分挖掘学科资源，制定较完整的专业培养方案，服务于社会经济发展的人才需要。在前两年的学习中重视基础理论学习与全国重点大学教学计划同步，做到厚基础，宽口径。后两年的学习中，加强应用与实践学习，与社会需求接轨。此外，教学技术中增加多门应用型课程，例如：UNIX/LINUX操作系统、大型数据库、信息安全基础、.net编程技术、J2EE企业级应用开发、视频编缉、网站规划与建设、嵌入式系统、GIS软件二次开发、软件测试与质量保证等课程，并在教学中采用任务驱动的教学方式，学生动手实践能力得到了很大提高。</p>
+				<h4>■&nbsp;技术实践体系</h4>
+				<p>学院重视对学生基本素质的培养，尤其在编程方面，采用全新方式对C语言和数据结构进行授课，奠定编程及算法的基础。学院每年组织全校程序设计竞赛以提高同学的编程兴趣和能力。学院建设了学生项目实践基地并配备专业指导老师，形成良好的学生科研氛围。学生从二年级起就自发组建团队开展项目研究，而项目来源于社会需求或老师的科研课题。通过科研项目的实战开发，同学们的成长进步很快。学院每年举办雏鹰展翅IT节，开展软件程序设计竞赛、计算机作品大赛、数码创意设计大赛和电子设计竞赛，以及学生创新科技成果交流活动，给同学们提供展现自己的才华的舞台与机会。</p>
+				<p><b>实践教学机构图：</b></p>
+				<p><img src="../../images/college/实践教学机构图.png" alt="实践教学机构图"></p>
+				<h4>■&nbsp;构建校企合作平台，打开学生实习就业之门</h4>
+				<p>学院坐落在风景优美的海滨城市珠海，位于珠海高新科技产业开发区的核心地带，毗邻国家级软件园区——南方软件园。学院与周边各软件和集成电路企业及研究机构保持着密切的合作关系，为学院的教学、实践以及学生日后的就业、创业营造了优越的环境。学院目前已经与珠海、深圳、广州、中山、上海、大连等地近180家IT企业建立了合作关系，学院专门安排四年级学生到合作企业或学校去实习三个月到半年，把学生的专业学习与社会需求及今后的发展更紧密地结合起来，提前让学生做好融入社会的心理准备及角色转换。</p>
+				<h4>■&nbsp;产学研全面发展</h4>
+				<p>学院重视科研，特别是与经济发展紧密结合的应用型研究项目。本着以科研促教学进步，以科研促产业发展的建院思路。近年来已经获得纵向和横向科研课题数十项，这些项目有力地带动了中青年教师的业务进步，同时也给大学生创造了参加科研项目的有利条件。在此基础上，学院申请的珠海高新区“网络安全公共技术服务平台”已经挂牌；珠海市科技创新“图形图像公共实验室”也获得批准，并授予牌匾，更推进了大学和产业的结合，共同为珠海的经济建设服务。</p>
+			</div><!-- content结束 -->
+		</div>
+	</div><!-- main结束 -->
+	<div class="footer comWidth">
+		<div class="footer_logo fl">
+			<img src="../../images/logo2.png" alt="logo">
+		</div><!-- footer_logo结束 -->
+		<div class="footer_left fl">
+			Copyright&nbsp;&copy;&nbsp;2015&nbsp;北京师范大学珠海分校信息技术学院&nbsp;All&nbsp;Rights&nbsp;Reserved<br>
+			地址：<a href="http://j.map.baidu.com/DdGk3">广东省珠海市香洲区唐家湾金凤路18号北京师范大学珠海分校信息技术学院</a>
+		</div><!-- footer_left结束 -->
+		<div class="footer_right fl">
+			邮编：519087&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0086-756-1234567<br>
+			技术支持：李奕锋&nbsp;&nbsp;&nbsp;&nbsp;联系方式：<a href="mailto:598535550@qq.com">598535550@qq.com</a>
+		</div><!-- footer_right结束 -->
+	</div><!-- footer结束 -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// 下拉菜单动画
+            $('#nav li').mousemove(function () {
+                $(this).find('ul').slideDown("fast");
+            });
+            $('#nav li').mouseleave(function () {
+                $(this).find('ul').slideUp("fast");
+            });
+        });
+	</script>
+</body>
+</html>

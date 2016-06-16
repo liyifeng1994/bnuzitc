@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>后台登陆 - 信息技术学院</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css">
+	<style>
+		body {
+			background-color: #EEE;
+			padding: 100px 0;
+			font-family: "宋体";
+		}
+		form {
+			width: 250px;
+			margin: 0 auto;
+		}
+		h2 {
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+		.ipt {
+			width: 250px;
+			height: 35px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			font-size: 16px;
+			padding: 5px 12px;
+		}
+		.ipt:focus {
+			border-color: #428BCA;
+		}
+		.btn {
+			margin-top: 10px;
+			width: 250px;
+			height: 40px;
+			background-color: #428BCA;
+			cursor: pointer;
+			color: #FFF;
+			font-size: 18px;
+			border-radius: 6px;
+		}
+		.btn:hover, .btn:active {
+			background-color: #3071A9;
+		}
+		label {
+			height: 20px;
+			line-height: 20px;
+			cursor: pointer;
+			display: inline-block;
+			margin: -5px 0 0 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="javascript:alert('抱歉，后台功能尚未实现，敬请期待！')" method="post">
+		<h2>后台登陆</h2>
+		<input class="ipt" type="text" placeholder="用户名"><br>
+		<input class="ipt" type="password" placeholder="密码"><br>
+		<input type="checkbox" id="autoLogin"><label for="autoLogin">自动登录</label><br>
+		<input class="btn" type="submit" value="登录">
+	</form>
+</body>
+</html>

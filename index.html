@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>信息技术学院</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css" charset="gbk">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- 引入JQuery及UI库 -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<!-- 设置首页、加入收藏 -->
+	<script type="text/javascript" src="js/setHomeSetFav.js" charset="gbk"></script>
+	<!--引入myFocus库及相应风格文件-->
+	<link rel="stylesheet" type="text/css" href="css/mF_fancy.css">
+	<script type="text/javascript" src="js/myfocus-2.0.1.min.js" charset="utf-8"></script>
+	<script type="text/javascript" src="js/mF_fancy.js"></script>
+	<script type="text/javascript">
+		// 焦点图
+		myFocus.set({
+		    id:'picBox',//焦点图盒子ID
+		    pattern:'mF_fancy',//风格应用的名称
+		    time:3,//切换时间间隔(秒)
+		    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+		    width:1000,//设置图片区域宽度(像素)
+		    height:250,//设置图片区域高度(像素)
+		    txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+		});
+	</script>
+</head>
+<body>
+	<div class="topBar">
+		<div class="comWidth">
+			<ul class="fr">
+				<li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+				<li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+				<li><a href="html/admin/admin.html" target="_blank">后台管理</a></li>
+				<li><a href="http://itc.bnuz.edu.cn/" target="_blank">旧版入口</a></li>
+			</ul>
+		</div><!-- comWidth结束 -->
+	</div><!-- topBar结束 -->
+	<div class="nav" id="nav">
+		<div class="comWidth clearfix">
+			<div class="logo fl"><a href="index.html" target="_blank"><img src="images/logo.png" alt="logo"></a></div>
+			<ul class="fl">
+				<li><a href="index.html" target="_blank">首&nbsp;&nbsp;页</a></li>
+				<li><a href="html/college/college.html" target="_blank">学院概况</a>
+					<ul>
+						<li><a href="html/college/college.html" target="_blank">学院简介</a></li>
+						<li><a href="html/college/characteristic.html" target="_blank">办学特色</a></li>
+						<li><a href="html/college/leader.html" target="_blank">现任领导</a></li>
+						<li><a href="html/college/organization.html" target="_blank">组织架构</a></li>
+						<li><a href="html/college/teacher.html" target="_blank">师资队伍</a></li>
+						<li><a href="html/college/communist.html" target="_blank">教师党建</a></li>
+						<li><a href="html/college/union.html" target="_blank">工会之家</a></li>
+					</ul>
+				</li>
+				<li><a href="html/news/news.html" target="_blank">学院新闻</a>
+					<ul>
+						<li><a href="html/news/rules.html" target="_blank">规章制度</a></li>
+						<li><a href="html/news/notice.html" target="_blank">公告通知</a></li>
+						<li><a href="html/news/news.html" target="_blank">新闻快讯</a></li>
+						<li><a href="html/news/work.html" target="_blank">党建工作</a></li>
+						<li><a href="html/news/student.html" target="_blank">学生天地</a></li>
+						<li><a href="html/news/teacher.html" target="_blank">教工之家</a></li>
+						<li><a href="html/news/job.html" target="_blank">就业信息</a></li>
+						<li><a href="html/news/international.html" target="_blank">国际合作</a></li>
+					</ul>
+				</li>
+				<li><a href="html/subject/jsj.html" target="_blank">学科专业</a>
+					<ul>
+						<li><a href="html/subject/jsj.html" target="_blank">计算机科学与技术</a></li>
+						<li><a href="html/subject/rj.html" target="_blank">软件工程</a></li>
+						<li><a href="html/subject/dz.html" target="_blank">电子信息科学与技术</a></li>
+						<li><a href="html/subject/dq.html" target="_blank">电气工程及其自动化</a></li>
+						<li><a href="html/subject/sm.html" target="_blank">数字媒体技术</a></li>
+						<li><a href="html/subject/gjb.html" target="_blank">国际研究班</a></li>
+						<li><a href="html/subject/yjs.html" target="_blank">研究生</a></li>
+					</ul>
+				</li>
+				<li><a href="html/study/direction.html" target="_blank">科学研究</a>
+					<ul>
+						<li><a href="html/study/direction.html" target="_blank">研究方向</a></li>
+						<li><a href="html/study/it.html" target="_blank">IT研发中心</a></li>
+						<li><a href="http://itc.bnuep.com:8088/gis/" target="_blank">遥感与GIS中心</a></li>
+						<li><a href="html/study/electric.html" target="_blank">电气智能控制研发中心</a></li>
+						<li><a href="html/study/intelligent.html" target="_blank">智能工程研究所</a></li>
+						<li><a href="http://sri.bnuz.edu.cn/flash/index2.7.4.html" target="_blank">软件研究所</a></li>
+						<li><a href="html/study/digital.html" target="_blank">数字媒体技术与应用研究中心</a></li>
+						<li><a href="html/study/graph.html" target="_blank">图形图像公共实验室</a></li>
+						<li><a href="html/study/network.html" target="_blank">网络安全技术服务平台</a></li>
+						<li><a href="http://itc.bnuep.com/syzx/" target="_blank">计算机教学实验中心</a></li>
+						<li><a href="http://jsjjc.bnuep.com/Default.aspx" target="_blank">计算机基础资源站</a></li>
+						<li><a href="html/study/experimentation.html" target="_blank">实验中心</a></li>
+						<li><a href="html/study/library.html" target="_blank">资料室</a></li>
+					</ul>
+				</li>
+				<li><a href="#">招生就业</a>
+					<ul>
+						<li><a href="http://zsb.bnuz.edu.cn/" target="_blank">校招生网</a></li>
+						<li><a href="http://job.bnuz.edu.cn/" target="_blank">校就业网</a></li>
+						<li><a href="http://itc.bnuz.edu.cn:8088/" target="_blank">就业指导中心</a></li>
+						<li><a href="http://itc.bnuep.com/jiuye/" target="_blank">就业信息管理系统</a></li>
+					</ul>
+				</li>
+				<li><a href="http://ittc.bnuep.com" target="_blank">培训中心</a></li>
+			</ul>
+			<input class="search fr" type="text" placeholder="请输入要搜索的内容...">
+		</div><!-- comWidth结束 -->
+	</div><!-- nav结束 -->
+	<div class="main comWidth">
+		<div class="noticeBar">
+			<div class="notice_content fl" id="callboard">
+				<ul>
+					<li><a href="#">【公告】北京师范大学珠海分校信息技术学院新版网站即将投入使用！</a></li>
+					<li><a href="html/news/notice/01.html" target="_blank">【通知公告】信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示（2015/5/18）</a></li>
+					<li><a href="html/news/news/01.html" target="_blank">【新闻快讯】信息技术学院招生宣传组赴江门开展宣传（2015/5/18）</a></li>
+					<li><a href="html/news/student/01.html" target="_blank">【学生天地】放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式（2015/5/20）</a></li>
+					<li><a href="html/news/teacher/01.html" target="_blank">【教工之家】学院2015年度青年教师教学基本功大赛顺利结束（2015/5/12）</a></li>
+				</ul>
+			</div><!-- notice_content结束 -->
+			<div id="date" class="date fr"></div><!-- date结束 -->
+		</div><!-- noticeBar结束 -->
+		<div id="picBox" style="z-index:1;"><!--焦点图盒子-->
+			<!--载入画面-->
+			<div class="loading"><img src="images/loading.gif" alt="拼命加载中..." /></div>
+			<div class="pic">
+        		<ul>
+        			<li><img src="images/picBox/1.png" /></li>
+        			<li><img src="images/picBox/2.png" /></li>
+        			<li><img src="images/picBox/3.png" /></li>
+        			<li><img src="images/picBox/4.png" /></li>
+        			<li><img src="images/picBox/5.png" /></li>
+        			<li><img src="images/picBox/6.png" /></li>
+        			<li><img src="images/picBox/7.png" /></li>
+        			<li><img src="images/picBox/8.png" /></li>
+        		</ul>
+    		</div>
+    	</div><!-- picBox结束 -->
+    	<div class="main_content clearfix">
+    		<div class="news fl">
+    			<div class="title">
+    				<div class="title_icon fl">
+    				</div><!-- title_icon结束 -->
+    				<div class="title_left fl">
+    					<h2 class="fl" id="title_notice"><a href="html/news/notice.html" target="_blank" onmousemove="javascript:changeNews(1);" style="color:#1874CD">公告通知</a></h2>
+    					<h2 class="fl" id="title_news"><a href="html/news/news.html" target="_blank" onmousemove="javascript:changeNews(2);">新闻快讯</a></h2>
+    				</div><!-- title_left结束 -->
+    				<div class="title_right fr">
+    					<span class="fr"><a id="more_left" href="html/news/notice.html" target="_blank" title="查看更多">More&gt;&gt;</a></span>
+    				</div><!-- title_right结束 -->
+    			</div><!-- title结束 -->
+    			<div class="news_list" id="news_notice">
+					<ul>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/notice/01.html" target="_blank">信息技术学院关于2015届优秀毕业生和十佳毕业生候选人名单的公示</a></span><span class="date">2015-05-18</span></li>
+					</ul>
+    			</div>
+    			<div class="news_list" id="news_news" style="display:none;">
+					<ul>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+						<li><span class="title"><a href="html/news/news/01.html" target="_blank">信息技术学院招生宣传组赴江门开展宣传</a></span><span class="date">2015-05-18</span></li>
+					</ul>
+    			</div>
+    		</div><!-- news结束 -->
+    		<div class="news fl">
+    			<div class="title">
+    				<div class="title_icon fl">
+    				</div><!-- title_icon结束 -->
+    				<div class="title_left fl">
+    					<h2 class="fl" id="title_student"><a class="title_activity" href="html/news/student.html" target="_blank" onmousemove="javascript:changeNews(3);" style="color:#1874CD">学生天地</a></h2>
+    					<h2 class="fl" id="title_teacher"><a href="html/news/teacher.html" target="_blank" onmousemove="javascript:changeNews(4);">教工之家</a></h2>   	
+    				</div><!-- title_left结束 -->
+    				<div class="title_right fr">
+    					<span class="fr"><a id="more_right" href="html/news/student.html" target="_blank" title="查看更多">More&gt;&gt;</a></span>
+    				</div><!-- title_right结束 -->
+    			</div><!-- title结束 -->
+    			<div class="news_list" id="news_student">
+					<ul>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+						<li><span class="title"><a href="html/news/student/01.html" target="_blank">放飞IT梦，Let IT Go——暨信息技术学院第十二届IT节开幕式</a></span><span class="date">2015-05-22</span></li>
+					</ul>
+    			</div>
+    			<div class="news_list" id="news_teacher" style="display:none;">
+					<ul>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+						<li><span class="title"><a href="html/news/teacher/01.html" target="_blank">学院2015年度青年教师教学基本功大赛顺利结束</a></span><span class="date">2015-05-12</span></li>
+					</ul>
+    			</div>
+    		</div><!-- news结束 -->
+    		<div class="info fl">
+    			<div class="title">
+    				<div class="title_icon fl">
+    				</div><!-- title_icon结束 -->
+    				<h2 class="fl" style="color:#1874CD;">用户信息导航</h2>
+    				<span class="fr"><a href="http://bnuz.edu.cn/info.htm" target="_blank" title="查看更多">More&gt;&gt;</a></span>
+    			</div><!-- title结束 -->
+    			<div class="info_list" id="accordion">
+    				<h3>在校学生</h3>
+    				<ul>
+    					<li><a href="http://jwc.bnuz.edu.cn/FenXiaoXiaoLi/Index.asp" target="_blank">学校校历</a></li>
+    					<li><a href="http://jwc.bnuz.edu.cn/MyPage/SchoolTime.html"	target="_blank">作息时间</a></li>
+    					<li><a href="http://tms.bnuz.edu.cn/" target="_blank">教学管理系统(TMS)</a></li>
+    					<li><a href="http://jwc.bnuz.edu.cn/" target="_blank">教务管理系统</a></li>
+    					<li><a href="http://es.bnuz.edu.cn:8080/" target="_blank">教务管理辅助系统</a></li>
+    					<li><a href="http://eol.bnuz.edu.cn/eol/homepage/common/index.jsp" target="_blank">网络教学综合平台</a></li>
+    					<li><a href="http://xsc.bnuz.edu.cn:4000/" target="_blank">学生资助系统</a></li>
+    					<li><a href="http://su.bnuz.edu.cn/" target="_blank">学生会</a></li>
+    					<li><a href="http://es.bnuz.edu.cn:8080/dormitory/logoff.do"	target="_blank">学生宿舍管理系统</a></li>
+    					<li><a href="http://www.bnuzau.com/" target="_blank">社联</a></li>
+    				</ul>
+    				<h3>教职员</h3>
+    				<ul>
+    					<li><a href="http://itc-mis.bnuep.com/" target="_blank">院务管理系统</a></li>
+    					<li><a href="http://gonghui.bnuz.edu.cn/" target="_blank">校工会</a></li>
+    					<li><a href="http://59.38.32.73:8080/" target="_blank">教师信息平台</a></li>
+    					<li><a href="http://oa.bnuz.edu.cn:8080/login/index.jsp" target="_blank">OA办公系统</a></li>
+    					<li><a href="http://mail.bnuz.edu.cn/" target="_blank">教师邮箱系统</a></li>
+    					<li><a href="http://tqa.bnuz.edu.cn:8080/" target="_blank">教师教学支援中心</a></li>
+    					<li><a href="http://tqa.bnuz.edu.cn/" target="_blank">教学质量控制(TQA)</a></li>
+    					<li><a href="http://tr.bnuz.edu.cn/" target="_blank">教学资源库</a></li>
+    					<li><a href="http://xwgk.bnuz.edu.cn/bszn.asp" target="_blank">办事流程</a></li>
+    				</ul>
+    				<h3>校友</h3>
+    				<ul>
+    					<li><a href="http://jwc.bnuz.edu.cn/FenXiaoXiaoLi/Index.asp" target="_blank">学校校历</a></li>
+    					<li><a href="http://jwc.bnuz.edu.cn/MyPage/SchoolTime.html"	target="_blank">作息时间</a></li>
+    					<li><a href="http://bnuz.edu.cn/map0.htm" target="_blank">学校地图</a></li>
+    					<li><a href="http://news.bnuz.edu.cn/media/index.asp" target="_blank">校园视频</a></li>
+    					<li><a href="http://bnuz.edu.cn/cclx.htm" target="_blank">乘车路线</a></li>
+    					<li><a href="http://bwc.bnuep.com/huji/" target="_blank">户籍窗口</a></li>
+    					<li><a href="http://xxbgs.bnuz.edu.cn/dangan/" target="_blank">毕业生档案查询</a></li>
+    					<li><a href="http://alumni.bnuz.edu.cn/" target="_blank">校友网</a></li>
+    					<li><a href="http://xwgk.bnuz.edu.cn/" target="_blank">校务公开</a></li>
+    				</ul>
+    				<h3>考生及访客</h3>
+    				<ul>
+    					<li><a href="http://jwc.bnuz.edu.cn/FenXiaoXiaoLi/Index.asp" target="_blank">学校校历</a></li>
+    					<li><a href="http://jwc.bnuz.edu.cn/MyPage/SchoolTime.html"	target="_blank">作息时间</a></li>
+    					<li><a href="http://bnuz.edu.cn/map0.htm" target="_blank">学校地图</a></li>
+    					<li><a href="http://news.bnuz.edu.cn/media/index.asp" target="_blank">校园视频</a></li>
+    					<li><a href="http://bnuz.edu.cn/cclx.htm" target="_blank">乘车路线</a></li>
+    					<li><a href="http://zsb.bnuz.edu.cn/" target="_blank">招生网</a></li>
+    					<li><a href="http://job.bnuz.edu.cn/" target="_blank">就业网</a></li>
+    					<li><a href="http://ztb.bnuz.edu.cn/" target="_blank">招标采购网</a></li>
+    					<li><a href="http://xwgk.bnuz.edu.cn/" target="_blank">校务公开</a></li>
+    				</ul>
+    			</div><!-- info_list结束 -->
+    			<select class="link" onchange="javascript:window.open(href=this.value);">
+					<option selected="selected">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;===学院导航===</option>
+					<option value="http://www.bnuz.edu.cn/">北京师范大学珠海分校</option>
+					<option value="http://library.bnuz.edu.cn">分校图书馆</option>
+					<option value="http://edu.bnuz.edu.cn/">教育学院</option>
+					<option value="http://wxy.bnuep.com/">文学院</option>
+					<option value="http://ibf.bnuz.edu.cn/">国际商学部</option>
+					<option value="http://som.bnuz.edu.cn/">管理学院</option>
+					<option value="http://rec.bnuz.edu.cn/">不动产学院</option>
+					<option value="http://sgl.bnuz.edu.cn/">法律与行政学院</option>
+					<option value="http://iscd.bnuz.edu.cn/">设计学院</option>
+					<option value="http://acf.bnuz.edu.cn/">艺术与传播学院</option>
+					<option value="http://fms.bnuep.com/">特许经营学院</option>
+					<option value="http://wyxy.bnuz.edu.cn/">外国语学院</option>
+					<option value="http://math.bnuep.com/">应用数学学院</option>
+					<option value="http://wlxy.bnuz.edu.cn/">物流学院</option>
+					<option value="http://ets.bnuz.edu.cn/">工程技术学院</option>
+					<option value="http://politics.bnuz.edu.cn/">政治与公民教育学院</option>
+					<option value="http://sportsleisure.bnuz.edu.cn/">运动休闲学院</option>
+					<option value="http://sce.bnuz.edu.cn/">继续教育学院</option>
+				</select><!-- link结束 -->
+    		</div><!-- info结束 -->
+    	</div><!-- main_content结束 -->
+	</div><!-- main结束 -->
+	<div class="footer comWidth">
+		<div class="footer_logo fl">
+			<img src="images/logo2.png" alt="logo">
+		</div><!-- footer_logo结束 -->
+		<div class="footer_left fl">
+			Copyright&nbsp;&copy;&nbsp;2015&nbsp;北京师范大学珠海分校信息技术学院&nbsp;All&nbsp;Rights&nbsp;Reserved<br>
+			地址：<a href="http://j.map.baidu.com/DdGk3">广东省珠海市香洲区唐家湾金凤路18号北京师范大学珠海分校信息技术学院</a>
+		</div><!-- footer_left结束 -->
+		<div class="footer_right fl">
+			邮编：519087&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0086-756-1234567<br>
+			技术支持：李奕锋&nbsp;&nbsp;&nbsp;&nbsp;联系方式：<a href="mailto:598535550@qq.com">598535550@qq.com</a>
+		</div><!-- footer_right结束 -->
+	</div><!-- footer结束 -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// 下拉菜单动画
+            $('#nav li').mousemove(function () {
+                $(this).find('ul').slideDown("fast");
+            });
+            $('#nav li').mouseleave(function () {
+                $(this).find('ul').slideUp("fast");
+            });
+            // 面板折叠
+			$("#accordion").accordion();
+        });        
+		// 新闻切换（n为标题所在的位置，例如通知公告为1，学生天地为3，一次类推）
+		function changeNews(n) {
+			switch(n) {
+				case 1:
+					$("#title_notice a").css('color', '#1874CD');
+					$("#title_news a").css('color', '#999');
+					$("#news_notice").css('display', 'block');
+					$("#news_news").css('display', 'none');
+					$("#more_left").attr('href', 'html/news/notice.html');
+					break;
+				case 2:
+					$("#title_notice a").css('color', '#999');
+					$("#title_news a").css('color', '#1874CD');
+					$("#news_notice").css('display', 'none');
+					$("#news_news").css('display', 'block');
+					$("#more_left").attr('href', 'html/news/news.html');
+					break;
+				case 3:
+					$("#title_student a").css('color', '#1874CD');
+					$("#title_teacher a").css('color', '#999');
+					$("#news_student").css('display', 'block');
+					$("#news_teacher").css('display', 'none');
+					$("#more_right").attr('href', 'html/news/student.html');
+					break;
+				case 4:
+					$("#title_student a").css('color', '#999');
+					$("#title_teacher a").css('color', '#1874CD');
+					$("#news_student").css('display', 'none');
+					$("#news_teacher").css('display', 'block');
+					$("#more_right").attr('href', 'html/news/teacher.html');
+					break;
+			}
+		}
+		// 更新日期
+		$(function() {
+			var date = new Date();
+			var year = date.getFullYear();
+			var month = date.getMonth()+1;
+			var day = date.getDate();
+			var weekday=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+			var week = weekday[date.getDay()];
+			$("#date").text('您好，今天是 '+year+'年'+month+'月'+day+'日 '+week);
+		});
+	</script>
+	<!--公告板滚动--> 
+	<script type = "text/javascript">
+		(function(win) {
+			var callboarTimer;
+			var callboard = $('#callboard');
+			var callboardUl = callboard.find('ul');
+			var callboardLi = callboard.find('li');
+			var liLen = callboard.find('li').length;
+			var initHeight = callboardLi.first().outerHeight(true);
+			win.autoAnimation = function() {
+				if (liLen <= 1) return;
+				var self = arguments.callee;
+				var callboardLiFirst = callboard.find('li').first();
+				callboardLiFirst.animate({
+					marginTop: -initHeight
+				}, 500, function() {
+					clearTimeout(callboarTimer);
+					callboardLiFirst.appendTo(callboardUl).css({
+						marginTop: 0
+					});
+					callboarTimer = setTimeout(self, 5000);
+				});
+			}
+			callboard.mouseenter(
+				function() {
+					clearTimeout(callboarTimer);
+				}).mouseleave(function() {
+				callboarTimer = setTimeout(win.autoAnimation, 5000);
+			});
+		}(window));
+		setTimeout(window.autoAnimation, 5000);
+	</script>
+</body>
+</html>

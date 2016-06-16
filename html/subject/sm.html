@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>数字媒体技术 - 信息技术学院</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css" charset="gbk">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<!-- 引入JQuery及UI库 -->
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+	<!-- 设置首页、加入收藏 -->
+	<script type="text/javascript" src="../../js/setHomeSetFav.js" charset="gbk"></script>
+	<!-- 返回顶部 -->
+	<script type="text/javascript" src="../../js/scrolltopcontrol-sub.js"></script>
+</head>
+<body>
+	<div class="topBar">
+		<div class="comWidth">
+			<ul class="fr">
+				<li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+				<li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+				<li><a href="../admin/admin.html" target="_blank">后台管理</a></li>
+				<li><a href="http://itc.bnuz.edu.cn/" target="_blank">旧版入口</a></li>
+			</ul>
+		</div><!-- comWidth结束 -->
+	</div><!-- topBar结束 -->
+	<div class="nav" id="nav">
+		<div class="comWidth clearfix">
+			<div class="logo fl"><a href="../../index.html" target="_blank"><img src="../../images/logo.png" alt="logo"></a></div>
+			<ul class="fl">
+				<li><a href="../../index.html" target="_blank">首&nbsp;&nbsp;页</a></li>
+				<li><a href="../college/college.html" target="_blank">学院概况</a>
+					<ul>
+						<li><a href="../college/college.html" target="_blank">学院简介</a></li>
+						<li><a href="../college/characteristic.html" target="_blank">办学特色</a></li>
+						<li><a href="../college/leader.html" target="_blank">现任领导</a></li>
+						<li><a href="../college/organization.html" target="_blank">组织架构</a></li>
+						<li><a href="../college/teacher.html" target="_blank">师资队伍</a></li>
+						<li><a href="../college/communist.html" target="_blank">教师党建</a></li>
+						<li><a href="../college/union.html" target="_blank">工会之家</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html" target="_blank">学院新闻</a>
+					<ul>
+						<li><a href="../news/rules.html" target="_blank">规章制度</a></li>
+						<li><a href="../news/notice.html" target="_blank">公告通知</a></li>
+						<li><a href="../news/news.html" target="_blank">新闻快讯</a></li>
+						<li><a href="../news/work.html" target="_blank">党建工作</a></li>
+						<li><a href="../news/student.html" target="_blank">学生天地</a></li>
+						<li><a href="../news/teacher.html" target="_blank">教工之家</a></li>
+						<li><a href="../news/job.html" target="_blank">就业信息</a></li>
+						<li><a href="../news/international.html" target="_blank">国际合作</a></li>
+					</ul>
+				</li>
+				<li><a href="../subject/jsj.html" target="_blank">学科专业</a>
+					<ul>
+						<li><a href="../subject/jsj.html" target="_blank">计算机科学与技术</a></li>
+						<li><a href="../subject/rj.html" target="_blank">软件工程</a></li>
+						<li><a href="../subject/dz.html" target="_blank">电子信息科学与技术</a></li>
+						<li><a href="../subject/dq.html" target="_blank">电气工程及其自动化</a></li>
+						<li><a href="../subject/sm.html" target="_blank">数字媒体技术</a></li>
+						<li><a href="../subject/gjb.html" target="_blank">国际研究班</a></li>
+						<li><a href="../subject/yjs.html" target="_blank">研究生</a></li>
+					</ul>
+				</li>
+				<li><a href="../study/direction.html" target="_blank">科学研究</a>
+					<ul>
+						<li><a href="../study/direction.html" target="_blank">研究方向</a></li>
+						<li><a href="../study/it.html" target="_blank">IT研发中心</a></li>
+						<li><a href="../study/http://itc.bnuep.com:8088/gis/" target="_blank">遥感与GIS中心</a></li>
+						<li><a href="../study/electric.html" target="_blank">电气智能控制研发中心</a></li>
+						<li><a href="../study/intelligent.html" target="_blank">智能工程研究所</a></li>
+						<li><a href="../study/http://sri.bnuz.edu.cn/flash/index2.7.4.html" target="_blank">软件研究所</a></li>
+						<li><a href="../study/digital.html" target="_blank">数字媒体技术与应用研究中心</a></li>
+						<li><a href="../study/graph.html" target="_blank">图形图像公共实验室</a></li>
+						<li><a href="../study/network.html" target="_blank">网络安全技术服务平台</a></li>
+						<li><a href="../study/http://itc.bnuep.com/syzx/" target="_blank">计算机教学实验中心</a></li>
+						<li><a href="../study/http://jsjjc.bnuep.com/Default.aspx" target="_blank">计算机基础资源站</a></li>
+						<li><a href="../study/experimentation.html" target="_blank">实验中心</a></li>
+						<li><a href="../study/library.html" target="_blank">资料室</a></li>
+					</ul>
+				</li>
+				<li><a href="#">招生就业</a>
+					<ul>
+						<li><a href="http://zsb.bnuz.edu.cn/" target="_blank">校招生网</a></li>
+						<li><a href="http://job.bnuz.edu.cn/" target="_blank">校就业网</a></li>
+						<li><a href="http://itc.bnuz.edu.cn:8088/" target="_blank">就业指导中心</a></li>
+						<li><a href="http://itc.bnuep.com/jiuye/" target="_blank">就业信息管理系统</a></li>
+					</ul>
+				</li>
+				<li><a href="http://ittc.bnuep.com" target="_blank">培训中心</a></li>
+			</ul>
+			<input class="search fr" type="text" placeholder="请输入要搜索的内容...">
+		</div><!-- comWidth结束 -->
+	</div><!-- nav结束 -->
+	<div class="main comWidth clearfix">
+		<div class="list_left fl">
+			<h3>学科专业</h3>
+			<ul>
+				<li><a href="jsj.html">计算机科学与技术</a></li>
+				<li><a href="rj.html">软件工程</a></li>
+				<li><a href="dz.html">电子信息科学与技术</a></li>
+				<li><a href="dq.html">电气工程及其自动化</a></li>
+				<li><a href="sm.html">数字媒体技术</a></li>
+				<li><a href="gjb.html">国际研究班</a></li>
+				<li><a href="yjs.html">研究生</a></li>
+			</ul>
+			<img src="../../images/xiaoxun.gif" alt="校训">
+		</div><!-- sub-nav结束 -->
+		<div class="list_right fr">
+			<h3>数字媒体技术</h3>
+			<div class="content">
+				<h5>办学特色</h5>
+				<p>数字媒体技术专业是一个朝阳专业，是科学技术与艺术的结合，课程设置侧重于技术与艺术的学科交叉性，能更加拓宽学生的就业领域。从市场需求出发，以科研项目驱动教学，紧跟最新数字媒体技术，注重个性化人才培养。</p>
+				<h5>学科基础课</h5>
+				<p>高等数学(上)、高等数学(下)、程序设计基础、造型基础(上)、造型基础(下)、数据结构、工程数学、认知心理学、数字媒体技术导论等</p>
+				<h5>专业主干课</h5>
+				<p>WEB技术基础、 面向对象程序设计、图形用户界面设计、计算机图形学、数据库应用技术、数字图像处理、计算机网络等。</p>
+				<h5>专业方向</h5>
+				<p>数字媒体技术专业下设两个专业方向：交互设计方向和新媒体应用方向。</p>
+				<h6>交互设计方向</h6>
+				<p>培养学生掌握交互设计的理论和实际技能，以市场和社会心理为导向，从事产品设计和移动应用开发的专业技术人才。方向课程有：移动应用开发、Web开发项目实践、iOS程序设计、交互设计与应用。</p>
+				<h6>新媒体应用方向</h6>
+				<p>培养具有数字设计、媒体制作与传播、计算机软件开发等数字媒体作品的设计、制作、技术支持、管理和研发能力的专门人才。方向课程有：数字特效、图形图像程序设计、虚拟现实技术、角色与场景设计。</p>
+				<h5>专业实践环节</h5>
+				<p>二维动画设计与制作、三维动画设计与制作、C#程序设计实践 数码摄影 动画基础 三维图形建模基础 影视制作与非线性编辑 专业项目实践、专业实践、毕业设计或论文。</p>
+				<h5>个性课程</h5>
+				<p>媒体艺术与科学、图形符号化设计表达、动态影像与宽带流媒体应用、设计思维与方法、创业基础、创意思维表达、多媒体应用软件实践（PS,CR，AI, AXURE、数字影视特技与后期制作等。</p>
+			</div><!-- content结束 -->
+		</div>
+	</div><!-- main结束 -->
+	<div class="footer comWidth">
+		<div class="footer_logo fl">
+			<img src="../../images/logo2.png" alt="logo">
+		</div><!-- footer_logo结束 -->
+		<div class="footer_left fl">
+			Copyright&nbsp;&copy;&nbsp;2015&nbsp;北京师范大学珠海分校信息技术学院&nbsp;All&nbsp;Rights&nbsp;Reserved<br>
+			地址：<a href="http://j.map.baidu.com/DdGk3">广东省珠海市香洲区唐家湾金凤路18号北京师范大学珠海分校信息技术学院</a>
+		</div><!-- footer_left结束 -->
+		<div class="footer_right fl">
+			邮编：519087&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0086-756-1234567<br>
+			技术支持：李奕锋&nbsp;&nbsp;&nbsp;&nbsp;联系方式：<a href="mailto:598535550@qq.com">598535550@qq.com</a>
+		</div><!-- footer_right结束 -->
+	</div><!-- footer结束 -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// 下拉菜单动画
+            $('#nav li').mousemove(function () {
+                $(this).find('ul').slideDown("fast");
+            });
+            $('#nav li').mouseleave(function () {
+                $(this).find('ul').slideUp("fast");
+            });
+        });
+	</script>
+</body>
+</html>

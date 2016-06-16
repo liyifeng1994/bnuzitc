@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>学院简介 - 信息技术学院</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css" charset="gbk">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<!-- 引入JQuery及UI库 -->
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+	<!-- 设置首页、加入收藏 -->
+	<script type="text/javascript" src="../../js/setHomeSetFav.js" charset="gbk"></script>
+	<!-- 返回顶部 -->
+	<script type="text/javascript" src="../../js/scrolltopcontrol-sub.js"></script>
+</head>
+<body>
+	<div class="topBar">
+		<div class="comWidth">
+			<ul class="fr">
+				<li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+				<li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+				<li><a href="../admin/admin.html" target="_blank">后台管理</a></li>
+				<li><a href="http://itc.bnuz.edu.cn/" target="_blank">旧版入口</a></li>
+			</ul>
+		</div><!-- comWidth结束 -->
+	</div><!-- topBar结束 -->
+	<div class="nav" id="nav">
+		<div class="comWidth clearfix">
+			<div class="logo fl"><a href="../../index.html" target="_blank"><img src="../../images/logo.png" alt="logo"></a></div>
+			<ul class="fl">
+				<li><a href="../../index.html" target="_blank">首&nbsp;&nbsp;页</a></li>
+				<li><a href="../college/college.html" target="_blank">学院概况</a>
+					<ul>
+						<li><a href="../college/college.html" target="_blank">学院简介</a></li>
+						<li><a href="../college/characteristic.html" target="_blank">办学特色</a></li>
+						<li><a href="../college/leader.html" target="_blank">现任领导</a></li>
+						<li><a href="../college/organization.html" target="_blank">组织架构</a></li>
+						<li><a href="../college/teacher.html" target="_blank">师资队伍</a></li>
+						<li><a href="../college/communist.html" target="_blank">教师党建</a></li>
+						<li><a href="../college/union.html" target="_blank">工会之家</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html" target="_blank">学院新闻</a>
+					<ul>
+						<li><a href="../news/rules.html" target="_blank">规章制度</a></li>
+						<li><a href="../news/notice.html" target="_blank">公告通知</a></li>
+						<li><a href="../news/news.html" target="_blank">新闻快讯</a></li>
+						<li><a href="../news/work.html" target="_blank">党建工作</a></li>
+						<li><a href="../news/student.html" target="_blank">学生天地</a></li>
+						<li><a href="../news/teacher.html" target="_blank">教工之家</a></li>
+						<li><a href="../news/job.html" target="_blank">就业信息</a></li>
+						<li><a href="../news/international.html" target="_blank">国际合作</a></li>
+					</ul>
+				</li>
+				<li><a href="../subject/jsj.html" target="_blank">学科专业</a>
+					<ul>
+						<li><a href="../subject/jsj.html" target="_blank">计算机科学与技术</a></li>
+						<li><a href="../subject/rj.html" target="_blank">软件工程</a></li>
+						<li><a href="../subject/dz.html" target="_blank">电子信息科学与技术</a></li>
+						<li><a href="../subject/dq.html" target="_blank">电气工程及其自动化</a></li>
+						<li><a href="../subject/sm.html" target="_blank">数字媒体技术</a></li>
+						<li><a href="../subject/gjb.html" target="_blank">国际研究班</a></li>
+						<li><a href="../subject/yjs.html" target="_blank">研究生</a></li>
+					</ul>
+				</li>
+				<li><a href="../study/direction.html" target="_blank">科学研究</a>
+					<ul>
+						<li><a href="../study/direction.html" target="_blank">研究方向</a></li>
+						<li><a href="../study/it.html" target="_blank">IT研发中心</a></li>
+						<li><a href="http://itc.bnuep.com:8088/gis/" target="_blank">遥感与GIS中心</a></li>
+						<li><a href="../study/electric.html" target="_blank">电气智能控制研发中心</a></li>
+						<li><a href="../study/intelligent.html" target="_blank">智能工程研究所</a></li>
+						<li><a href="http://sri.bnuz.edu.cn/flash/index2.7.4.html" target="_blank">软件研究所</a></li>
+						<li><a href="../study/digital.html" target="_blank">数字媒体技术与应用研究中心</a></li>
+						<li><a href="../study/graph.html" target="_blank">图形图像公共实验室</a></li>
+						<li><a href="../study/network.html" target="_blank">网络安全技术服务平台</a></li>
+						<li><a href="http://itc.bnuep.com/syzx/" target="_blank">计算机教学实验中心</a></li>
+						<li><a href="http://jsjjc.bnuep.com/Default.aspx" target="_blank">计算机基础资源站</a></li>
+						<li><a href="../study/experimentation.html" target="_blank">实验中心</a></li>
+						<li><a href="../study/library.html" target="_blank">资料室</a></li>
+					</ul>
+				</li>
+				<li><a href="#">招生就业</a>
+					<ul>
+						<li><a href="http://zsb.bnuz.edu.cn/" target="_blank">校招生网</a></li>
+						<li><a href="http://job.bnuz.edu.cn/" target="_blank">校就业网</a></li>
+						<li><a href="http://itc.bnuz.edu.cn:8088/" target="_blank">就业指导中心</a></li>
+						<li><a href="http://itc.bnuep.com/jiuye/" target="_blank">就业信息管理系统</a></li>
+					</ul>
+				</li>
+				<li><a href="http://ittc.bnuep.com" target="_blank">培训中心</a></li>
+			</ul>
+			<input class="search fr" type="text" placeholder="请输入要搜索的内容...">
+		</div><!-- comWidth结束 -->
+	</div><!-- nav结束 -->
+	<div class="main comWidth clearfix">
+		<div class="list_left fl">
+			<h3>学院概况</h3>
+			<ul>
+				<li><a href="college.html">学院简介</a></li>
+				<li><a href="characteristic.html">办学特色</a></li>
+				<li><a href="leader.html">现任领导</a></li>
+				<li><a href="organization.html">组织架构</a></li>
+				<li><a href="teacher.html">师资队伍</a></li>
+				<li><a href="communist.html">教师党建</a></li>
+				<li><a href="union.html">工会之家</a></li>
+			</ul>
+			<img src="../../images/xiaoxun.gif" alt="校训">
+		</div><!-- sub-nav结束 -->
+		<div class="list_right fr">
+			<h3>学院简介</h3>
+			<div class="content">
+				 <p>北京师范大学珠海分校信息技术学院成立于2002年，属理工科，是分校资历最深的五大院系之一。学院设有计算机科学与技术系、数字媒体技术系、软件工程系、电子信息科学与技术系、电气工程及其自动化系五系五专业，现有学生近2000名。学院从成立到现在，一直以北京师范大学本部信息科学与技术学院为依托，学、研、产全面发展，肩负着培养理工科高级技术人才的任务，是计算机技术工程师、电子工程师、电气工程师、软件工程师和数字媒体技术工程师的摇篮。</p>
+ 				<p>学院的教师队伍主要由北京师范大学本部信息科学与技术学院选派的部分优秀教师，全国高等教育机构遴选的优秀人才，美国、英国、德国等归国学者，国内外知名软件企业高级开发和管理人员等组成。学院现有教职工50余名，既有在学术界有较大影响的老专家、老教授，也有一大批暂露头角的中青年学术骨干，其中博士13名，教授、副教授及高级工程师占一半以上，还有近20名具有行业背景或海外留学经历的教师。</p>
+ 				<p>学院拥有多个专业实验室，计算机实验教学实验室获得“广东省计算机实验教学示范实验室”称号；图形图像实验室成为珠海市图形图像公共实验室，在为企业及相关科研单位提供技术服务的同时，还将承担一些国家级、省部级和珠海市的科研项目；国家高新区网络安全技术服务平台已在学院挂牌，将更好地为珠海软件企业提供公共技术支撑服务。学院还有软件研究所、校企合作实验室，包括联合FPC关联技术工程研发中心、电气智能控制研发中心等，学院专业研究中心，包括遥感与GIS中心、教育信息化中心、数字媒体技术及应用研究中心、智能工程研究所等。学院鼓励教师与企事业进行横向和纵向科研项目的研究。目前教师在商业软件、网络、地理信息系统、物流信息系统与RFID技术、数字媒体、游戏、3D研究、移动通信等领域从事研究工作，并承担了多项科研课题。</p>
+ 				<p>学院注重教学改革与创新，重视对学生基本素质的培养。专业课程设置及时适应IT行业发展。在前两年的教学中重视基础理论学习，做到厚基础，宽口径；后两年的学习中，加强应用与实践学习，与社会需求接轨。教学计划中增加多门应用型课程，并在教学中采用任务驱动的教学方式，通过开展竞赛提高学习兴趣和能力，使学生动手实践能力得到很大提高。学院连续多年组队参加大学生程序设计竞赛，年年取得好成绩，并得到2008、2009年亚洲赛区银奖、2011年亚洲赛区金奖和2009、2010珠海区域赛金奖。2009年学院电子信息科学与技术专业同学第一次参加全国电子专业人才设计与技能大赛即获广东省一等奖、全国三等奖的好成绩，2010年参加此项比赛，获得广东赛区四个一等奖中的两个。2014年计算机科学与技术专业和数字媒体技术专业的同学共同合作获得全国3D动力大赛一等奖。此外，同学还在”泛珠三角大学生计算机作品赛”、“广东省图像图形创作大赛”、“挑战杯”广东省大学生课外科技学术作品比赛、广东省大学生电子设计竞赛、广东省大学生竞赛嵌入式物联网设计大赛中屡获佳绩。学院鼓励同学们积极参与科研项目，建设了学生项目实践基地并配备专业指导老师，每年组织一次雏鹰展翅IT节，开展软件程序设计竞赛、计算机作品大赛、数码创意设计大赛和电子设计竞赛，形成了良好的学生科研氛围。</p>
+ 				<p>学院与周边各软件和电子企业及研究机构保持着密切的合作关系，为教学、实践以及学生日后的就业、创业营造了优越的环境。目前已经与珠海、深圳、广州、中山、上海、大连等地160多家IT企业科研机构、学校等建立了合作关系，其中不乏业内知名企业。学院专门安排四年级学生到合作企业或事业单位去实习三个月到半年，把学生的专业学习与社会需求及今后的发展更紧密地结合起来。提前让学生做好融入社会的心理准备及角色转换。</p>
+ 				<p>信息技术学院不断拓展国际化教育资源，积极与国内外多所知名大学开展学术与科研方面的交流合作。学院目前已经和美国、英国、加拿大、马来西亚、香港、澳门的多所著名大学开展包括交换学生和短期访问等合作，只要学生有意愿，并且英语合格，就可以在大学期间选择到加拿大或美国等国的大学留学半年、一年或更长时间，在国外学习的学分可以加入学生的总学分中，这样既拓展了学生的国际视野，又提高了英语水平，并打通了学生毕业后继续出国（境）留学深造的渠道，为学生成材就业提供了多种选择。几年来，学院每年都有10%以上的毕业生选择了出国（境）深造。</p>
+ 				<p>IT专业一直是珠三角地区的热门专业，年年招聘需求在各行业中名列前茅。学院目前已经有九届本科毕业生，历年平均就业率约97.3%，多次被评为学校就业先进单位。毕业生的就业单位遍布珠三角地区的IT行业、企事业单位。由于他们的出色表现，许多毕业生已经成为单位的业务骨干。九年来还有不少同学选择了考研或出国出境，在国内外的名牌大学里继续深造，还有部分同学考取了国家公务员。</p>
+			</div><!-- content结束 -->
+		</div>
+	</div><!-- main结束 -->
+	<div class="footer comWidth">
+		<div class="footer_logo fl">
+			<img src="../../images/logo2.png" alt="logo">
+		</div><!-- footer_logo结束 -->
+		<div class="footer_left fl">
+			Copyright&nbsp;&copy;&nbsp;2015&nbsp;北京师范大学珠海分校信息技术学院&nbsp;All&nbsp;Rights&nbsp;Reserved<br>
+			地址：<a href="http://j.map.baidu.com/DdGk3">广东省珠海市香洲区唐家湾金凤路18号北京师范大学珠海分校信息技术学院</a>
+		</div><!-- footer_left结束 -->
+		<div class="footer_right fl">
+			邮编：519087&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0086-756-1234567<br>
+			技术支持：李奕锋&nbsp;&nbsp;&nbsp;&nbsp;联系方式：<a href="mailto:598535550@qq.com">598535550@qq.com</a>
+		</div><!-- footer_right结束 -->
+	</div><!-- footer结束 -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// 下拉菜单动画
+            $('#nav li').mousemove(function () {
+                $(this).find('ul').slideDown("fast");
+            });
+            $('#nav li').mouseleave(function () {
+                $(this).find('ul').slideUp("fast");
+            });
+        });
+	</script>
+</body>
+</html>

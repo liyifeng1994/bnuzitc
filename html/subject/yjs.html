@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>研究生 - 信息技术学院</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../../css/reset.css" charset="gbk">
+	<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+	<!-- 引入JQuery及UI库 -->
+	<script type="text/javascript" src="../../js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="../../js/jquery-ui.min.js"></script>
+	<!-- 设置首页、加入收藏 -->
+	<script type="text/javascript" src="../../js/setHomeSetFav.js" charset="gbk"></script>
+	<!-- 返回顶部 -->
+	<script type="text/javascript" src="../../js/scrolltopcontrol-sub.js"></script>
+</head>
+<body>
+	<div class="topBar">
+		<div class="comWidth">
+			<ul class="fr">
+				<li><a onclick="AddFavorite(window.location,document.title)" href="javascript:void(0)">加入收藏</a></li>
+				<li><a onclick="SetHome(window.location)" href="javascript:void(0)">设为首页</a></li>
+				<li><a href="../admin/admin.html" target="_blank">后台管理</a></li>
+				<li><a href="http://itc.bnuz.edu.cn/" target="_blank">旧版入口</a></li>
+			</ul>
+		</div><!-- comWidth结束 -->
+	</div><!-- topBar结束 -->
+	<div class="nav" id="nav">
+		<div class="comWidth clearfix">
+			<div class="logo fl"><a href="../../index.html" target="_blank"><img src="../../images/logo.png" alt="logo"></a></div>
+			<ul class="fl">
+				<li><a href="../../index.html" target="_blank">首&nbsp;&nbsp;页</a></li>
+				<li><a href="../college/college.html" target="_blank">学院概况</a>
+					<ul>
+						<li><a href="../college/college.html" target="_blank">学院简介</a></li>
+						<li><a href="../college/characteristic.html" target="_blank">办学特色</a></li>
+						<li><a href="../college/leader.html" target="_blank">现任领导</a></li>
+						<li><a href="../college/organization.html" target="_blank">组织架构</a></li>
+						<li><a href="../college/teacher.html" target="_blank">师资队伍</a></li>
+						<li><a href="../college/communist.html" target="_blank">教师党建</a></li>
+						<li><a href="../college/union.html" target="_blank">工会之家</a></li>
+					</ul>
+				</li>
+				<li><a href="../news/news.html" target="_blank">学院新闻</a>
+					<ul>
+						<li><a href="../news/rules.html" target="_blank">规章制度</a></li>
+						<li><a href="../news/notice.html" target="_blank">公告通知</a></li>
+						<li><a href="../news/news.html" target="_blank">新闻快讯</a></li>
+						<li><a href="../news/work.html" target="_blank">党建工作</a></li>
+						<li><a href="../news/student.html" target="_blank">学生天地</a></li>
+						<li><a href="../news/teacher.html" target="_blank">教工之家</a></li>
+						<li><a href="../news/job.html" target="_blank">就业信息</a></li>
+						<li><a href="../news/international.html" target="_blank">国际合作</a></li>
+					</ul>
+				</li>
+				<li><a href="../subject/jsj.html" target="_blank">学科专业</a>
+					<ul>
+						<li><a href="../subject/jsj.html" target="_blank">计算机科学与技术</a></li>
+						<li><a href="../subject/rj.html" target="_blank">软件工程</a></li>
+						<li><a href="../subject/dz.html" target="_blank">电子信息科学与技术</a></li>
+						<li><a href="../subject/dq.html" target="_blank">电气工程及其自动化</a></li>
+						<li><a href="../subject/sm.html" target="_blank">数字媒体技术</a></li>
+						<li><a href="../subject/gjb.html" target="_blank">国际研究班</a></li>
+						<li><a href="../subject/yjs.html" target="_blank">研究生</a></li>
+					</ul>
+				</li>
+				<li><a href="../study/direction.html" target="_blank">科学研究</a>
+					<ul>
+						<li><a href="../study/direction.html" target="_blank">研究方向</a></li>
+						<li><a href="../study/it.html" target="_blank">IT研发中心</a></li>
+						<li><a href="../study/http://itc.bnuep.com:8088/gis/" target="_blank">遥感与GIS中心</a></li>
+						<li><a href="../study/electric.html" target="_blank">电气智能控制研发中心</a></li>
+						<li><a href="../study/intelligent.html" target="_blank">智能工程研究所</a></li>
+						<li><a href="../study/http://sri.bnuz.edu.cn/flash/index2.7.4.html" target="_blank">软件研究所</a></li>
+						<li><a href="../study/digital.html" target="_blank">数字媒体技术与应用研究中心</a></li>
+						<li><a href="../study/graph.html" target="_blank">图形图像公共实验室</a></li>
+						<li><a href="../study/network.html" target="_blank">网络安全技术服务平台</a></li>
+						<li><a href="../study/http://itc.bnuep.com/syzx/" target="_blank">计算机教学实验中心</a></li>
+						<li><a href="../study/http://jsjjc.bnuep.com/Default.aspx" target="_blank">计算机基础资源站</a></li>
+						<li><a href="../study/experimentation.html" target="_blank">实验中心</a></li>
+						<li><a href="../study/library.html" target="_blank">资料室</a></li>
+					</ul>
+				</li>
+				<li><a href="#">招生就业</a>
+					<ul>
+						<li><a href="http://zsb.bnuz.edu.cn/" target="_blank">校招生网</a></li>
+						<li><a href="http://job.bnuz.edu.cn/" target="_blank">校就业网</a></li>
+						<li><a href="http://itc.bnuz.edu.cn:8088/" target="_blank">就业指导中心</a></li>
+						<li><a href="http://itc.bnuep.com/jiuye/" target="_blank">就业信息管理系统</a></li>
+					</ul>
+				</li>
+				<li><a href="http://ittc.bnuep.com" target="_blank">培训中心</a></li>
+			</ul>
+			<input class="search fr" type="text" placeholder="请输入要搜索的内容...">
+		</div><!-- comWidth结束 -->
+	</div><!-- nav结束 -->
+	<div class="main comWidth clearfix">
+		<div class="list_left fl">
+			<h3>学科专业</h3>
+			<ul>
+				<li><a href="jsj.html">计算机科学与技术</a></li>
+				<li><a href="rj.html">软件工程</a></li>
+				<li><a href="dz.html">电子信息科学与技术</a></li>
+				<li><a href="dq.html">电气工程及其自动化</a></li>
+				<li><a href="sm.html">数字媒体技术</a></li>
+				<li><a href="gjb.html">国际研究班</a></li>
+				<li><a href="yjs.html">研究生</a></li>
+			</ul>
+			<img src="../../images/xiaoxun.gif" alt="校训">
+		</div><!-- sub-nav结束 -->
+		<div class="list_right fr">
+			<h3>研究生</h3>
+			<div class="content">
+				<big><center><b>北京师范大学全日制软件工程硕士研究生培养方案（珠海）</b></center></big>
+				<center>2012-4-25</center><br>
+<p>为更好地适应国家软件产业发展和社会对高层次软件工程人才的迫切需要，增强我国软件人才的国际竞争力，为国家信息化建设培养大批软件工程领域的实用型、复合型软件技术人才和管理人才，北京师范大学从软件工程硕士专业学位研究生的培养、学位授予等环节的规范化管理，保证培养质量的角度出发，依据《教育部关于做好全日制硕士专业学位研究生培养工作的若干意见》（教研[2009]1号）、国务院学位办《关于软件工程领域工程硕士培养及学位授予工作有关事宜的通知》（学位办[2002]9号）、全国工程硕士专业学位教育指导委员会提出的《关于制定软件工程硕士培养方案的指导意见》及教育部发布的《软件工程领域工程硕士培养方案（修改稿）》，特制定以下北京师范大学全日制软件工程硕士研究生培养方案。</p>
+<p>本方案作为北京师范大学对软件工程硕士专业学位教育的指导性文件，规定其培养目标、方向和要求，以及培养对象、方式及学习年限，并就课程设置和学位论文要求等给出指导性意见。</p>
+<h5>一、培养目标和要求</h5>
+<p>全日制软件工程硕士需要掌握软件工程领域坚实的基础理论和宽广的专业知识、是具有较强的解决实际问题的能力，能够承担国民经济各个领域软件系统研发和软件项目管理、具有良好职业素养的高层次应用型软件工程人才。</p>
+<p>作为一名合格的软件工程领域的工程硕士获得者，应当符合国民经济信息化建设和发展需要，以及国家和企业对软件工程技术人才需求，能够成为企业所需要的高层次的软件工程技术和管理人才。熟悉软件工程领域的实践特征和行业规范，具有很强的工程实践能力，具备运用先进的工程化方法、技术和工具从事软件系统分析、设计、开发、测试和维护等工作的能力，以及工程项目的组织与管理能力，团队协作能力、技术创新能力和市场开拓能力；能够熟练应用一门外语，具备良好的阅读、理解和撰写外语资料的能力和进行国际化交流的能力。其基本能力应当达到（具有国际水准的）高级程序员、系统分析和设计师、或项目管理人员的水平。</p>
+<h5>二、学科专业及培养方向</h5>
+<p>软件工程专业硕士的培养方向包括：需求分析与领域工程、软件设计技术、软件测试和软件质量工程、软件项目管理、软件服务与运维支持、嵌入式软件及应用、通讯与网络工程技术、信息安全技术等方向。办学过程中还将根据政府机关、企业和市场的需求，培养其它与软件工程相关的交叉领域的高级人才。根据软件产业人才需求的特征，并紧密结合市场需求，目前北京师范大学软件工程专业硕士研究生设立以下培养方向：</p>
+<h6>1．软件开发技术</h6>
+<p>主要研究基于网络、数据库和嵌入式环境的大型软件开发技术；</p>
+<h6>2．领域信息化技术</h6>
+<p>主要研究基于行业和领域应用的信息化系统的分析设计、开发集成和维护管理等；</p>
+<h5>三、培养方式及学习年限</h5>
+<p>全日制软件工程专业硕士研究生以应届本科毕业生为主，采用全日制授课方式。培养分为课程学习、专业实践和学位论文三个环节。学制2年，其中从事软件工程专业实践的时间不少于6个月。</p>
+<p>1．课程学习主要在校内完成，课程以实际应用为导向，以职业需求为目标，以综合素养和应用知识与能力的提高为核心。内容上强调理论与应用的有机结合，突出案例分析和实践研究；教学过程强调团队学习、案例分析、现场研究、模拟训练等方法；注重培养学生研究实践问题的意识和能力。在学校学习的时间累计不少于1年，实行学分制管理。</p>
+<p>2．专业实践是重要的教学环节，充分的、高质量的专业实践是专业学位教育质量的重要保证。专业实践在现场或实习单位完成，时间一般为6个月，采用集中实践与分段实践相结合的方式。注重培养学生的实践研究和创新能力，增长实际工作经验，缩短就业适应期限，提高学生的专业素养及就业创业能力。</p>
+<p>3．软件工程专业硕士研究生的培养实行双导师制，以校内导师指导为主，校外导师参与实践过程、项目研究、课程与论文等多个环节的指导工作。学位论文由校内相关学科具有硕士以上资格的导师与企业和工程部门内经单位推荐的业务水平高、责任心强的具有高级技术职称的人员联合指导。来自企业和工程部门的导师由学校按程序办理聘任手续。</p>
+<h5>四、课程设置及学分要求</h5>
+<p>攻读软件工程硕士专业学位的研究生，应获得总学分不少于32学分。其中必修课程至少19学分，选修课程至少13。</p>
+<p>软件工程硕士研究生课程方案：</p>
+<img src="../../images/subject/yjs.png" height="100%" width="100%" alt="软件工程硕士研究生课程方案">
+<p>说明：专业方向代码：</p>
+<p>软件开发技术－1；领域信息化技术－2</p>
+<h5>必修环节</h5>
+<p>（一）中期筛选</p>
+<p>在课程学习结束后，安排一次中期筛选。中期筛选工作由学校和企业有关人员共同组织。中期筛选结果报培养处备案。对未能按期完成课程学习任务者，应说明理由并根据情况做出处理。有下列情况之一者，终止培养（已交纳的费用不予退还）：</p>
+<p>1．必修课出现两门次不及格（含补考在内）或课程累计三门次不及格者；</p>
+<p>2．参加学校组织的外语水平考试经补考仍不及格者；</p>
+<p>3．由于思想品德、学业等原因，经考核认为不宜继续培养者。</p>
+
+<p>终止培养者，如课程全部结束且符合培养方案要求，可发给课程结业证书；如未完成课程学习，只提供所学课程的学习证明。</p>
+<p>（二）开题报告</p>
+<p>中期筛选通过者可进入论文阶段。在论文阶段初期，每位学生应按要求提交开题报告（含文献综述）。</p>
+<p>开题报告中的论文选题由研究生与校内导师协商确定。开题报告应包括论文选题的背景意义、有关方面的最新成果和发展动态、课题的研究内容、拟采取的实施方案、关键技术及难点、预期达到的目标、论文详细工作进度安排和主要参考文献等。</p>
+<p>开题报告的审查由学校和企业有关人员共同组织，公开进行。评审小组成员3—5人。开题报告未通过者，可根据实际情况，给予一次重新开题报告的机会。</p>
+<p>两次开题均未通过者，终止培养。</p>
+<p>（三）论文中期检查</p>
+<p>1．学生定期汇报制度：学生在论文工作期间，每3个月向双方导师提交论文阶段进展报告，报告内容包括：</p>
+<p>（1）论文工作的进展情况和取得的成果；</p>
+<p>（2）下一阶段的论文工作安排；</p>
+<p>（3）论文工作的评价：包括技术难点，拟采取的措施，工作成果的评价等。每位指导教师和各院（系）主管负责人要对汇报内容签署具体意见。</p>
+<p>2．集中定期检查制度：每个工程硕士班，每季度集中进行一次检查（或抽查），对出现问题较多的学生，可作为下一次检查的重点对象。每次检查结果书面备案。</p>
+<p>(四)工程实践与毕业设计</p>
+<p>在课程学习和论文工作期间，学生必须参与一定的工程实践工作，以及在论文中包含所研究项目的系统设计工作。</p>
+<h5>六、学位论文质量要求</h5>
+<p>1．论文选题</p>
+<p>论文选题一般直接来源于企事业单位，具有明确的应用背景和实用价值，同时具有先进性、一定的技术难度和工作量，能体现作者综合运用科学理论、方法和技术手段解决工程师实际问题的能力。</p>
+<p>选题可以是关键技术的研究、具有实践价值的软件研发、工程管理实践研究等。</p>
+<p>2．论文形式和格式</p>
+<p>论文可以是关键技术的研究论文、软件系统研究报告或者工程管理系统的研究报告等。</p>
+<p>学位论文应包含以下几个部分：</p>
+<p>①中英文摘要</p>
+<p>②目录</p>
+<p>③主要符号表</p>
+<p>④选题的背景、依据及意义</p>
+<p>⑤论文主体部分</p>
+<p>⑥结论</p>
+<p>⑦致谢</p>
+<p>⑧参考文献</p>
+<p>⑨必要的附录</p>
+<p>⑩攻读学位期间的研究成果</p>
+<p>3．论文质量要求</p>
+<p>⑴技术研究类论文的质量要求</p>
+<p>①能综合应用基础理论与专业知识，理论推导、分析严密完整，实验方法科学、数据可靠；</p>
+<p>②能应用先进的技术方法分析与解决问题；</p>
+<p>③论文成果应具有一定的先进性和实用性。</p>
+
+<p>⑵软件研发类论文的质量要求</p>
+<p>①需求分析合理，总体设计正确；</p>
+<p>②程序编制及文档规范；</p>
+<p>③应有调试、测试乃至应用结果和评价。</p>
+<p>⑶工程管理类</p>
+<p>①应有明确的工程应用背景和一定的经济或社会效益；</p>
+<p>②收集与统计的数据充分、可靠；</p>
+<p>③理论建模和分析方法科学正确。</p>
+<p>学位论文的撰写应符合国家规定的学位论文编写格式标准化的要求。论文撰写的核心问题是将作者研究所得到的新见解或创造性的结果，系统而又有说服力地表达出来。为此需注意以下几点：</p>
+<p>①论文的内容结构要反映论文性质的特点。性质不同，论文的内容结构、论述方式、论证材料与方法也不相同。</p>
+<p>②在论文中适当地引用文献资料是必要的，但必须突出作者研究结果的阐述，而不应本末倒置，以大量引用文献资料来取代作者个人的研究。</p>
+<p>③论文论点的阐述与论证必须具有严密的逻辑性，一方面论文内容的组织要有层次分明的逻辑结构，另一方面论文中概念的界定，判断的作出及推理的过程都应合乎逻辑。</p>
+<p>④注意语言运用的科学性和准确性。不应生造缺乏科学论证的新术语、新概念。要重视图表的使用，并应精心设计和绘制。</p>
+<h5>七、论文的评审与答辩</h5>
+<p>学位论文的评审着重审核作者综合运用科学理论、方法和技术手段解决工程实际问题的能力，项目具体方案及其实现的先进性、合理性、技术难度、工作量和实际效果，以及报告的规范化程度和质量。</p>
+<p>攻读软件工程领域的工程硕士专业学位研究生必须完成培养方案中规定的所有环节，成绩合格，方可申请参加学位论文答辩。</p>
+<p>学生必须在答辩前两个月将论文初稿交指导教师审查修改，两位指导教师对学生的论文须提出明确的书面意见。</p>
+<p>各院系应在学生答辩前一个月组织预审，预审通过者方可参加正式答辩。</p>
+<p>学位论文应由2位专家评阅，答辩委员会应由3－5位专家组成（导师不参加答辩委员会）；评阅人和答辩委员会成员中均应有来自工矿企业或工程部门的具有高级专业技术职务的专家。</p>
+<h5>八、学位授予</h5>
+<p>通过课程考试取得规定学分并通过学位论文答辩的研究生，由北京师范大学学位评定委员会审核批准后，授予软件工程领域工程硕士专业学位，发给工程硕士学位证书。</p>
+<h5>九、导师职责</h5>
+<p>1．校内指导教师负责制定工程硕士的培养计划，并对论文选题、开题报告、论文质量全面负责。校内指导教师可通过多种方式对学生的论文进行指导，在论文工作期间，应及时了解论文进展，把握研究方向。</p>
+<p>2．兼职指导教师负责制定论文研究计划，定期检查论文进展情况，作好学生的思想工作，督促完成论文工作计划，并对论文的关键环节进行指导，协助校内导师把好论文质量关。</p>
+<p>3．为加强合作培养，双方导师应经常联系，及时沟通，取长补短，共同指导工程硕士。校企双方还可成立由若干指导教师和兼职指导教师组成的导师组，共同对工程硕士进行培养。</p>
+			</div><!-- content结束 -->
+		</div>
+	</div><!-- main结束 -->
+	<div class="footer comWidth">
+		<div class="footer_logo fl">
+			<img src="../../images/logo2.png" alt="logo">
+		</div><!-- footer_logo结束 -->
+		<div class="footer_left fl">
+			Copyright&nbsp;&copy;&nbsp;2015&nbsp;北京师范大学珠海分校信息技术学院&nbsp;All&nbsp;Rights&nbsp;Reserved<br>
+			地址：<a href="http://j.map.baidu.com/DdGk3">广东省珠海市香洲区唐家湾金凤路18号北京师范大学珠海分校信息技术学院</a>
+		</div><!-- footer_left结束 -->
+		<div class="footer_right fl">
+			邮编：519087&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：0086-756-1234567<br>
+			技术支持：李奕锋&nbsp;&nbsp;&nbsp;&nbsp;联系方式：<a href="mailto:598535550@qq.com">598535550@qq.com</a>
+		</div><!-- footer_right结束 -->
+	</div><!-- footer结束 -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// 下拉菜单动画
+            $('#nav li').mousemove(function () {
+                $(this).find('ul').slideDown("fast");
+            });
+            $('#nav li').mouseleave(function () {
+                $(this).find('ul').slideUp("fast");
+            });
+        });
+	</script>
+</body>
+</html>
